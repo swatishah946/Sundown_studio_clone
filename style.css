@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -95,6 +96,12 @@ padding-bottom: 80px;
     text-align: end;
     line-height: 80%;
     padding-right: 2vw;
+    position: relative;
+    z-index: 1;
+    mix-blend-mode: normal;
+    background: transparent;
+    /* color: #EDEAE3; */
+
 }
 
 
@@ -103,8 +110,75 @@ padding-bottom: 80px;
     margin-top: 8vh;
 border-radius: 30px; 
 width: 100%;
+z-index: 2;
 
 }
 video{
     object-fit:contain ;
+}
+#animation-main{
+    position: absolute;
+    height: 60vh;
+    width: 100vh;
+    right: 0;
+    top: 38%;
+    z-index: 0;
+}
+#div1{
+    height: 100%;
+    width: 100%;
+    background-color: #Fe320A;
+    filter: blur(20px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+
+}
+#div2{
+    height: 50vh;
+    width: 50vh;
+    filter: blur(25px);
+   border-radius: 50%;
+   position: absolute;
+   background:linear-gradient(#Fe320A,#fe330aeb) ;
+animation-name: anime1;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+
+
+}
+#div3{
+    height: 40vh;
+    width: 40vh;
+    filter: blur(20px);
+   border-radius: 50%;
+   position: absolute;
+   background-color: #Fe320A;
+   background:linear-gradient(#Fe320A,#fe330aeb) ;
+   animation-name: anime2;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+   
+
+}
+@keyframes anime1 {
+    from{
+        transform: translate(55%,-10%);
+    }
+    To{
+        transform: translate(0%,10%);
+    }
+    
+}
+@keyframes anime2 {
+    from{
+        transform: translate(20%,0%);
+    }
+    To{
+        transform: translate(0%,10%);
+    }
+    
 }
