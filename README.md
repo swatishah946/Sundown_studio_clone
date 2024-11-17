@@ -1,6 +1,6 @@
 ﻿# [Sundown Studio]
 
-![Sundown Studio](![alt text](image.png))
+![Sundown Studio]![alt text](image.png)
 
 ## Table of Contents
 
@@ -28,4 +28,8 @@ Welcome to Sundown Studio! This project is a responsive frontend web application
 
 ## Project Structure
 ![alt text](image.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
 
